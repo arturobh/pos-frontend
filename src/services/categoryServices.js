@@ -1,5 +1,5 @@
 import axios from "axios";
-import backendURL from './backendServer';
+const backendURL = 'https://pos-backend-production-6081.up.railway.app';
 
 export async function getCategory(id) {
 

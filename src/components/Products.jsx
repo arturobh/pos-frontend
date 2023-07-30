@@ -6,8 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {useState} from 'react';
 import {getOneProduct} from '../services/productServices';
+const backendURL = 'https://pos-backend-production-6081.up.railway.app';
 const bootstrap = require('bootstrap');
-import backendURL from './backendServer';
+
 
 const Products =({products, addToOrder}) => {
     let rendered = [];

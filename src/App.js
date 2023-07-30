@@ -14,7 +14,7 @@ import {getCategory} from './services/categoryServices';
 import EditModal from "./components/EditModal";
 import PaymentModal from "./components/PaymentModal";
 import Toast from 'react-bootstrap/Toast';
-import backendURL from './backendServer';
+const backendURL = 'https://pos-backend-production-6081.up.railway.app';
 
 
 

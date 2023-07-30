@@ -7,7 +7,7 @@ import Item from './Item';
 import Item2 from './Item2';
 import DrinkSizeOption from '../components/DrinkSizeOption';
 import { Container } from 'react-bootstrap';
-import backendURL from './backendServer';
+const backendURL = 'https://pos-backend-production-6081.up.railway.app';
 
 function ComboOption({defCheck=false, defaultDrinkName=null ,defaultDrinkSize, defaultExtraSize, price, onClickCallback}){
 

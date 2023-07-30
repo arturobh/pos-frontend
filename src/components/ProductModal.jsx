@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import {getOneProduct} from '../services/productServices';
 import ComboOption from './ComboOption';
 import ExtraIngredientsOption from './ExtraIngredientsOption';
-import backendURL from './backendServer';
+const backendURL = 'https://pos-backend-production-6081.up.railway.app';
 
 function ProductModal(props){
   props.productData.name = props.productData.name.toUpperCase();
