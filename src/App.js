@@ -14,7 +14,7 @@ import {getCategory} from './services/categoryServices';
 import EditModal from "./components/EditModal";
 import PaymentModal from "./components/PaymentModal";
 import Toast from 'react-bootstrap/Toast';
-const backendURL = 'http://localhost:3001';
+import backendURL from './backendServer';
 
 
 

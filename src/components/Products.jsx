@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import {useState} from 'react';
 import {getOneProduct} from '../services/productServices';
 const bootstrap = require('bootstrap');
-const backendURL = 'http://localhost:3001';
+import backendURL from './backendServer';
 
 const Products =({products, addToOrder}) => {
     let rendered = [];

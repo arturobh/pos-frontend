@@ -4,7 +4,7 @@ import {getExtraIngredients, getOneIngredient} from '../services/ingredientServi
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Item3 from './Item3';
-const backendURL = 'http://localhost:3001';
+import backendURL from './backendServer';
 
 function ExtraIngredientsOption({options, changePrice, checkboxCallback, selected = []}){
 

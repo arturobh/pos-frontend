@@ -1,5 +1,5 @@
 import axios from "axios";
-const backendURL = 'http://localhost:3001';
+import backendURL from './backendServer';
 
 export async function getAllCategories() {
 

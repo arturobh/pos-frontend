@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import {getOneProduct} from '../services/productServices';
 import ComboOption from './ComboOption';
 import ExtraIngredientsOption from './ExtraIngredientsOption';
-const backendURL = 'http://localhost:3001';
+import backendURL from './backendServer';
 
 function ProductModal(props){
   props.productData.name = props.productData.name.toUpperCase();

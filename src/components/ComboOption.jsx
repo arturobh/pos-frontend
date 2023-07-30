@@ -7,7 +7,7 @@ import Item from './Item';
 import Item2 from './Item2';
 import DrinkSizeOption from '../components/DrinkSizeOption';
 import { Container } from 'react-bootstrap';
-const backendURL = 'http://localhost:3001';
+import backendURL from './backendServer';
 
 function ComboOption({defCheck=false, defaultDrinkName=null ,defaultDrinkSize, defaultExtraSize, price, onClickCallback}){
 
