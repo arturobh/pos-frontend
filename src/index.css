@@ -1,0 +1,18 @@
+@import url("./assets/fonts/stylesheet.css");
+
+body {
+  margin: 0;
+  font-family: 'Intro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background: #E6E6E6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
