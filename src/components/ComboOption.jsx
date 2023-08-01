@@ -1,3 +1,4 @@
+import env from "react-dotenv";
 import Form from 'react-bootstrap/Form';
 import React, { useState, useEffect } from "react";
 import {getProducts, getOneProduct} from '../services/productServices';
@@ -7,7 +8,7 @@ import Item from './Item';
 import Item2 from './Item2';
 import DrinkSizeOption from '../components/DrinkSizeOption';
 import { Container } from 'react-bootstrap';
-const backendURL = 'https://pos-backend-production-6081.up.railway.app';
+const backendURL = env.BACKEND_URL;
 
 function ComboOption({defCheck=false, defaultDrinkName=null ,defaultDrinkSize, defaultExtraSize, price, onClickCallback}){
 

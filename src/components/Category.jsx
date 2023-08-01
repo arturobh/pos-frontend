@@ -1,3 +1,4 @@
+import env from "react-dotenv";
 import daves from '../daves_x1.png'
 
 function Category({id, name, image, handleClick}){

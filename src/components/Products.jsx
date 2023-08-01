@@ -1,3 +1,4 @@
+import env from "react-dotenv";
 import Item from './Item';
 import Item2 from './Item2';
 import ProductModal from './ProductModal';
@@ -6,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {useState} from 'react';
 import {getOneProduct} from '../services/productServices';
-const backendURL = 'https://pos-backend-production-6081.up.railway.app';
+const backendURL = env.BACKEND_URL;
 const bootstrap = require('bootstrap');
 
 

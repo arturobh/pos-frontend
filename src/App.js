@@ -1,3 +1,4 @@
+import env from "react-dotenv";
 import axios from "axios";
 import icons from './icons';
 import './App.css';
@@ -14,7 +15,7 @@ import {getCategory} from './services/categoryServices';
 import EditModal from "./components/EditModal";
 import PaymentModal from "./components/PaymentModal";
 import Toast from 'react-bootstrap/Toast';
-const backendURL = 'https://pos-backend-production-6081.up.railway.app';
+const backendURL = env.BACKEND_URL;
 
 
 

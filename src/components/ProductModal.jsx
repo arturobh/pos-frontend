@@ -1,3 +1,4 @@
+import env from "react-dotenv";
 import SizeOption from './SizeOption';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -9,7 +10,7 @@ import { useEffect, useState } from 'react';
 import {getOneProduct} from '../services/productServices';
 import ComboOption from './ComboOption';
 import ExtraIngredientsOption from './ExtraIngredientsOption';
-const backendURL = 'https://pos-backend-production-6081.up.railway.app';
+const backendURL = env.BACKEND_URL;
 
 function ProductModal(props){
   props.productData.name = props.productData.name.toUpperCase();

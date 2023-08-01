@@ -1,5 +1,6 @@
+import env from "react-dotenv";
 import axios from "axios";
-const backendURL = 'https://pos-backend-production-6081.up.railway.app';
+const backendURL = env.BACKEND_URL;
 
 export async function getCategory(id) {
 

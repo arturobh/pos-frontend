@@ -1,10 +1,11 @@
+import env from "react-dotenv";
 import Form from 'react-bootstrap/Form';
 import React, { useState, useEffect } from "react";
 import {getExtraIngredients, getOneIngredient} from '../services/ingredientServices';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Item3 from './Item3';
-const backendURL = 'https://pos-backend-production-6081.up.railway.app';
+const backendURL = env.BACKEND_URL;
 
 function ExtraIngredientsOption({options, changePrice, checkboxCallback, selected = []}){
 
