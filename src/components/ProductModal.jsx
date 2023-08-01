@@ -161,10 +161,18 @@ function ProductModal(props){
       "frosty" : false
     }
 
-    for(var key in dict) {
-      var value = dict[key];
-        return type === key ? true : false;
-    }
+    let isCombo;
+    let types = Object.keys(dict);
+    
+    types.forEach(typeName => {
+
+      if(type === typeName){
+        
+        isCombo = dict[typeName];
+      }
+    })
+
+    return isCombo;
   }
 
     return (
